@@ -6,6 +6,10 @@ import Day1 from "./components/day1";
 import TravelThere from "./components/travel-there";
 import Day2 from "./components/day2";
 import Day3 from "./components/day3";
+import Day4 from "./components/day4";
+import TravelBack from "./components/travel-back";
+import Day5 from "./components/day5";
+import Notes from "./components/notes";
 
 export default function Home() {
   const buttons = [
@@ -38,6 +42,10 @@ export default function Home() {
       <Day1/>
       <Day2/>
       <Day3/>
+      <Day4/>
+      <Day5/>
+      <TravelBack/>
+      <Notes/>
 
     </main>
   );

@@ -22,12 +22,7 @@ const Place: NextPage = () => {
         </div>
         <div className="flex-1 flex items-start justify-center mq825:w-full">
           <a href="https://www.xandwhy.co.uk/clubspace/eighteen">
-            <img
-              className="flex-1 relative rounded-3xs max-w-full overflow-hidden object-cover z-[1] mq825:min-w-full"
-              loading="lazy"
-              alt=""
-              src="/eighteen4@2x.jpg"
-            />
+            
           </a>
         </div>
       </div>

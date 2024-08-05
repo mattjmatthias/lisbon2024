@@ -24,7 +24,7 @@ export default function Home() {
         </div>
         <div className="relative flex items-center justify-center text-center py-4 pr-1.5">
           <h1 className="m-0 w-full text-[50px] relative text-right tracking-[-4px] font-bold font-inherit whitespace-pre-wrap inline-block max-w-full z-[3] leading-[38px] mix-blend-screen">
-            BECKY'S 40TH
+            BECKY&apos;S 40TH
             LISBON 2024
           </h1>
         </div>

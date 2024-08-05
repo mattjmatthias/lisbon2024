@@ -4,6 +4,7 @@ import React from 'react';
 type Button = {
   id: string;
   label: string;
+  t: string;
 };
 
 type ButtonGridProps = {

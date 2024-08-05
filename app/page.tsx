@@ -1,18 +1,20 @@
 import Image from "next/image";
 import Place from "./components/place";
-import header from "../public/header-dark.jpeg"
+import header from "../public/header-dark.jpeg";
 import ButtonGrid from "./components/button-grid";
+import Day1 from "./components/day1";
+import TravelThere from "./components/travel-there";
 
 export default function Home() {
   const buttons = [
-    { id: 'section1', label: 'Depature', t: 'Partida' },
-    { id: 'section2', label: 'Return', t: 'Volver' },
-    { id: 'section3', label: 'Monday', t: 'Segunda-Feira' },
-    { id: 'section3', label: 'Tuesday', t: 'Terça-Feira' },
-    { id: 'section3', label: 'Wednesday', t: 'Quarto-Feira' },
-    { id: 'section3', label: 'Thursday', t: 'Quinto-Feira' },
-    { id: 'section3', label: 'Friday', t: 'Sexto-Feira' },
-    { id: 'section3', label: 'Notes', t: 'Notas' }
+    { id: 'departure', label: 'Departure', t: 'Partida' },
+    { id: 'return', label: 'Return', t: 'Volver' },
+    { id: 'monday', label: 'Monday', t: 'Segunda-Feira' },
+    { id: 'tuesday', label: 'Tuesday', t: 'Terça-Feira' },
+    { id: 'wednesday', label: 'Wednesday', t: 'Quarto-Feira' },
+    { id: 'thursday', label: 'Thursday', t: 'Quinto-Feira' },
+    { id: 'friday', label: 'Friday', t: 'Sexto-Feira' },
+    { id: 'notes', label: 'Notes', t: 'Notas' }
   ];
 
   return (
@@ -29,9 +31,10 @@ export default function Home() {
         </div>
       </div>
 
-      <ButtonGrid buttons={buttons} />
-      <div className="h-[200px] w-full gradient"/>
-      
+      <ButtonGrid buttons={buttons} />      
+      <TravelThere/>
+      <Day1/>
+
     </main>
   );
 }

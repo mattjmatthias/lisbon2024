@@ -4,6 +4,8 @@ import header from "../public/header-dark.jpeg";
 import ButtonGrid from "./components/button-grid";
 import Day1 from "./components/day1";
 import TravelThere from "./components/travel-there";
+import Day2 from "./components/day2";
+import Day3 from "./components/day3";
 
 export default function Home() {
   const buttons = [
@@ -34,6 +36,8 @@ export default function Home() {
       <ButtonGrid buttons={buttons} />      
       <TravelThere/>
       <Day1/>
+      <Day2/>
+      <Day3/>
 
     </main>
   );

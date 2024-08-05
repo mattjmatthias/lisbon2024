@@ -1,24 +1,16 @@
-'use client'
-
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-type PlaceProps = {
+type RestaurantProps = {
   image: string;
   name: string;
   t: string;
-  shortDescription: string[];
+  restaurantUrl: string;
   description: string[];
   url: string;
 };
 
-const Place: React.FC<PlaceProps> = ({ image, name, t, shortDescription, description, url }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  const handleToggle = () => {
-    setIsExpanded(prev => !prev);
-  };
-
+const Restaurant: React.FC<RestaurantProps> = ({ image, name, t, restaurantUrl, description, url }) => {
   return (
     <div className="relative mb-4">
       <h2 className="font-bold text-xl my-4">
@@ -38,20 +30,9 @@ const Place: React.FC<PlaceProps> = ({ image, name, t, shortDescription, descrip
 
       <div className="relative">
         <div
-          className={`transition-opacity duration-500 ease-in-out overflow-hidden ${isExpanded ? 'opacity-100' : 'opacity-0'} mb-4`}
-          style={{ maxHeight: isExpanded ? '2000px' : '0px' }}
+          className="overflow-hidden mb-4"          
         >
           {description.map((line, index) => (
-            <p key={index} className="mb-4">
-              {line}
-            </p>
-          ))}
-        </div>
-        <div
-          className={`transition-opacity duration-500 ease-in-out overflow-hidden ${!isExpanded ? 'opacity-100' : 'opacity-0'} mb-4`}
-          style={{ maxHeight: !isExpanded ? '500px' : '0px' }}
-        >
-          {shortDescription.map((line, index) => (
             <p key={index} className="mb-4">
               {line}
             </p>
@@ -60,12 +41,12 @@ const Place: React.FC<PlaceProps> = ({ image, name, t, shortDescription, descrip
       </div>
 
       <div className="flex flex-row gap-2">
-        <button
-          onClick={handleToggle}
+        <a
           className="rounded-md md:max-w-[300px] mb-4 p-4 flex-1 flex items-center justify-center bg-pink-600 font-medium text-white"
+          href={restaurantUrl}
         >
-          {isExpanded ? 'Hide Info' : 'More Info'}
-        </button>
+          Website 
+        </a>
 
         <a
           className="rounded-md md:max-w-[300px] mb-4 p-4 flex-1 flex items-center justify-center bg-pink-600 font-medium text-white"
@@ -78,4 +59,4 @@ const Place: React.FC<PlaceProps> = ({ image, name, t, shortDescription, descrip
   );
 };
 
-export default Place;
+export default Restaurant;

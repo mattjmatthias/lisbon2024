@@ -1,22 +1,9 @@
 import Image from "next/image";
 import rossioHeader from "../../public/rossio-header.jpg";
-import convento from "../../public/convento.jpg";
-import baixa from "../../public/baixa.jpg";
-import header from "../public/header-dark.jpeg";
 import Place from "./place";
+import Restaurant from "./restaurant";
 
 export default function Day1() {
-  const buttons = [
-    { id: 'departure', label: 'Departure', t: 'Partida' },
-    { id: 'return', label: 'Return', t: 'Volver' },
-    { id: 'monday', label: 'Monday', t: 'Segunda-Feira' },
-    { id: 'tuesday', label: 'Tuesday', t: 'Terça-Feira' },
-    { id: 'wednesday', label: 'Wednesday', t: 'Quarto-Feira' },
-    { id: 'thursday', label: 'Thursday', t: 'Quinto-Feira' },
-    { id: 'friday', label: 'Friday', t: 'Sexto-Feira' },
-    { id: 'notes', label: 'Notes', t: 'Notas' }
-  ];
-
   return (      
     <>
       <div id="monday" className="relative overflow-hidden">
@@ -67,8 +54,38 @@ export default function Day1() {
                 "Originally built in the late 14th century by Nuno Álvares Pereira, a nobleman and military commander, the convent was one of the largest and most important Gothic buildings in Lisbon. Its design featured an impressive nave and intricate arches, showcasing the grandeur of medieval Portuguese architecture. However, the catastrophic earthquake of 1755, followed by a fire, left much of the structure in ruins. Today, the open-air roofless nave, with its skeletal arches reaching towards the sky, provides a stark and moving atmosphere that captures the imagination of visitors.",
                 "Despite the destruction, the convent has been partially restored and transformed into an archaeological museum, housing a fascinating collection of artifacts. Visitors can explore exhibits that include ancient tombstones, pre-Columbian pottery, and even the mummified remains of a Peruvian child. The museum's collection offers a unique glimpse into Portugal's extensive history and cultural exchanges.",
                 "The convent's location also provides a serene escape from the city's hustle and bustle. Its peaceful setting, combined with the haunting beauty of the ruins, makes it a popular spot for reflection and photography. The Carmo Convent is not just a relic of the past but a vibrant part of Lisbon's cultural life, hosting concerts and events in its ethereal, open-air space. Whether you're exploring the historical artifacts or simply soaking in the atmosphere, the Carmo Convent is a must-visit site that offers a unique perspective on Lisbon's storied past."]}
-            url="https://www.google.com/maps/place/Santa+Justa+Lift/@38.7138802,-9.1416313,17z/data=!4m6!3m5!1s0xd193478b78a8d2f:0xe1147c62e070697c!8m2!3d38.7121301!4d-9.1394297!16zL20vMDYydGw1?entry=ttu"
+            url="https://www.google.com/maps/place/Carmo+Convent/@38.7123621,-9.1578052,15z/data=!3m1!5s0xd19347f4bd8b7d7:0xd780cc121205771!4m6!3m5!1s0xd19347f372ec63f:0x32d7f56592e02cef!8m2!3d38.7120383!4d-9.1406129!16zL20vMGdxNG41?entry=ttu"
             />
+
+        <Place
+            name="Baixa e Rua Augusta"
+            t="Low Area + Augusta Rd"
+            image="/baixa.jpg"
+            shortDescription={[
+                "Discover the vibrant Baixa district, the heart of Lisbon's downtown area. Stroll down Rua Augusta, a bustling pedestrian avenue lined with historic arcades, stylish shops, charming cafes, and lively street performers. This energetic street leads you directly to the grand Praça do Comércio, an impressive riverside square that reflects Lisbon's rich maritime heritage."
+            ]}
+            description={[
+                "Baixa, meaning 'low' in Portuguese, is the city's central business district, meticulously rebuilt in the early 19th century after the devastating 1755 earthquake. The area is characterized by its grand neoclassical architecture and wide, grid-like streets, designed to provide a sense of order and space in the aftermath of the disaster. This urban renewal was spearheaded by the Marquês de Pombal, a key figure in Lisbon's recovery, whose vision shaped the modern cityscape we see today.",
+                "Rua Augusta, the main thoroughfare of Baixa, is a lively pedestrian street that embodies the spirit of Lisbon. It is flanked by elegant 18th-century buildings and arcades, which house a variety of shops, cafes, and eateries. The street's design is marked by its striking triumphal arch, the Arco da Rua Augusta, which offers a gateway to the historic square, Praça do Comércio. This monumental arch is adorned with sculptures and provides panoramic views of the square and the Tagus River.",
+                "Praça do Comércio, or Commerce Square, is one of Lisbon's largest and most majestic squares. It was once the site of the royal palace before the 1755 earthquake, and today it serves as a focal point for the city's cultural and social activities. The square is bordered by impressive yellow and white neoclassical buildings, including the former customs house and the elegant arcades of the Rua Augusta. The open space of the square offers stunning views of the Tagus River and the iconic Ponte 25 de Abril bridge in the distance.",
+                "Visiting Baixa and Rua Augusta provides a rich blend of historical significance and modern vibrancy. The area's blend of grand architecture, lively street life, and historic landmarks offers a compelling glimpse into Lisbon's past and present. Whether you're shopping along Rua Augusta or relaxing by the river in Praça do Comércio, Baixa is a must-visit district that captures the essence of Lisbon's enduring charm."
+            ]}
+            url="https://www.google.com/maps/place/Baixa+de+Lisboa,+1100-422+Lisbon,+Portugal/@38.7123621,-9.1578052,15z/data=!3m1!4b1!4m6!3m5!1s0xd19347aa9819715:0xb58b62b103a27cd1!8m2!3d38.7123643!4d-9.1383428!16zL20vMDdxdF95?entry=ttu"
+        />
+
+        <h1 className="text-3xl font-bold">Restaurant</h1>
+
+        <Restaurant
+            name="Casa Tradição"
+            t="Traditional House"
+            image="/casatradicao.jpg"
+            description={[
+                "We have a table booked for 7:30pm at this beautifully local restaurant in the Alfama district which serves contemporary Portuguese cuisine.",
+                "Casa Tradição is marked #50 of 4,479 restaurants in Lisbon with a rating of 5.0 of 181 reviews. Prices range from £34-68."
+            ]}
+            restaurantUrl="https://casatradicao.pt/"
+            url="https://www.google.com/maps/place/Baixa+de+Lisboa,+1100-422+Lisbon,+Portugal/@38.7123621,-9.1578052,15z/data=!3m1!4b1!4m6!3m5!1s0xd19347aa9819715:0xb58b62b103a27cd1!8m2!3d38.7123643!4d-9.1383428!16zL20vMDdxdF95?entry=ttu"
+        />
       </div>      
     </>
   );

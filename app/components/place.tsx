@@ -1,32 +1,80 @@
-import type { NextPage } from "next";
-import Image from "next/image";
+'use client'
 
-const Place: NextPage = () => {
+import React, { useState } from 'react';
+import Image from 'next/image';
+
+type PlaceProps = {
+  image: string;
+  name: string;
+  t: string;
+  shortDescription: string[];
+  description: string[];
+  url: string;
+};
+
+const Place: React.FC<PlaceProps> = ({ image, name, t, shortDescription, description, url }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const handleToggle = () => {
+    setIsExpanded(prev => !prev);
+  };
+
   return (
-    <section className="self-stretch flex flex-row items-start justify-start pt-0 px-0 box-border max-w-full text-left text-10xl text-white font-futura mq825:flex-col mq825:box-border">
-      <div className="flex-1 flex flex-row items-center justify-center p-[80px] mq825:p-[50px] text-black box-border gap-[118px] mq825:gap-[29px] mq1425:gap-[59px] max-w-full lg:flex-wrap mq825:flex-col mq825:box-border mq1425:box-border">
-        <div className="flex-1 flex flex-col items-start justify-start px-0 pb-0 box-border max-w-full lg:flex-1 mq825:min-w-full mq825:w-full">
-          <div className="self-stretch flex flex-col items-start justify-start gap-[24px]">
-            <div className="m-0 self-stretch relative text-inherit z-[1] mq450:text-3xl mq825:text-10xl">
-              <div className="flex">
-                <span className="pt-[7.1px] font-regular text-xl mr-2">at</span>
-                <a href="https://www.xandwhy.co.uk/clubspace/eighteen">
-                 
-                </a>
-              </div>
-            </div>
-            <div className="self-stretch relative  leading-[150%] text-3xl tracking-[-0.75px] font-small-text text-gainsboro-200 z-[1] mq450:text-lgi mq450:leading-[29px]">
-              Eighteen is a private bar and outdoor terrace on the 18th floor of the new 103 Colmore Row building in Birmingham City Centre
-            </div>
-          </div>
+    <div className="relative">
+      <h2 className="font-bold text-xl my-4">
+        {name} <span className="text-sm font-normal">{t}</span>
+      </h2>
+
+      <div className="w-full mb-4 relative pb-4">
+        <Image
+          src={image}
+          alt={name}
+          className="rounded-lg object-cover"
+          layout="intrinsic"
+          width={700}
+          height={475}
+        />
+      </div>
+
+      <div className="relative">
+        <div
+          className={`transition-opacity duration-500 ease-in-out overflow-hidden ${isExpanded ? 'opacity-100' : 'opacity-0'} mb-4`}
+          style={{ maxHeight: isExpanded ? '1000px' : '0px' }}
+        >
+          {description.map((line, index) => (
+            <p key={index} className="mb-4">
+              {line}
+            </p>
+          ))}
         </div>
-        <div className="flex-1 flex items-start justify-center mq825:w-full">
-          <a href="https://www.xandwhy.co.uk/clubspace/eighteen">
-            
-          </a>
+        <div
+          className={`transition-opacity duration-500 ease-in-out overflow-hidden ${!isExpanded ? 'opacity-100' : 'opacity-0'} mb-4`}
+          style={{ maxHeight: !isExpanded ? '500px' : '0px' }}
+        >
+          {shortDescription.map((line, index) => (
+            <p key={index} className="mb-4">
+              {line}
+            </p>
+          ))}
         </div>
       </div>
-    </section>
+
+      <div className="flex flex-row gap-2">
+        <button
+          onClick={handleToggle}
+          className="rounded-md md:max-w-[300px] mb-4 p-4 flex-1 flex items-center justify-center bg-pink-600 text-white"
+        >
+          {isExpanded ? 'Hide Info' : 'More Info'}
+        </button>
+
+        <a
+          className="rounded-md md:max-w-[300px] mb-4 p-4 flex-1 flex items-center justify-center bg-pink-600 text-white"
+          href={url}
+        >
+          Show on map
+        </a>
+      </div>
+    </div>
   );
 };
 

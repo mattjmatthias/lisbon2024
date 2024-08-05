@@ -18,7 +18,7 @@ export default function Day1() {
       </div>   
       <div className="flex flex-col p-8">
         <div>
-            <p>Having unpacked and decompressed, there&apos;s a few things to see right on our doorstep, and some time before dinner.</p>
+            <p>Having arrived, unpacked and decompressed, there&apos;s a few things to see right on our doorstep, and some time before dinner.</p>
         </div>   
 
         <Place

@@ -16,7 +16,7 @@ const Header: React.FC<HeaderProps> = ({ image, name, t, tag }) => {
         <div className="absolute inset-0 w-full h-[200px] max-h-[200px]">
             <Image src={image} alt="Header image" fill={true} className="object-cover object-middle"/>
         </div>
-        <div className="relative flex items-center justify-center text-center">
+        <div className="relative flex items-center justify-center text-center pl-1.5 md:p-4">
             <h1 className="m-0 w-fit text-[40px] md:text-[70px] relative text-left tracking-[-4px] font-bold font-inherit whitespace-pre-wrap inline-block max-w-full z-[3] md:leading-[60px] leading-[38px] mix-blend-screen">
             <p>{name}<span className="ml-2 text-xs font-normal tracking-[0px]">{t}</span></p>
             </h1>

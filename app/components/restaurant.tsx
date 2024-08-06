@@ -30,7 +30,7 @@ const Restaurant: React.FC<RestaurantProps> = ({ image, name, t, restaurantUrl, 
         </div>
 
         <div className="w-full md:w-1/2 md:pl-4">
-          <div className="overflow-hidden mb-4">
+          <div className="overflow-hidden my-4">
             {description.map((line, index) => (
               <p key={index} className="mb-4">
                 {line}

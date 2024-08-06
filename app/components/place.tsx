@@ -37,9 +37,9 @@ const Place: React.FC<PlaceProps> = ({ image, name, t, shortDescription, descrip
           />
         </div>
 
-        <div className="w-full md:w-1/2 md:pl-4">
+        <div className="w-full md:w-1/2 md:pl-4 my-4">
           <div
-            className={`transition-opacity duration-500 ease-in-out overflow-hidden ${isExpanded ? 'opacity-100' : 'opacity-0'} my-4`}
+            className={`transition-opacity duration-500 ease-in-out overflow-hidden ${isExpanded ? 'opacity-100' : 'opacity-0'}`}
             style={{ maxHeight: isExpanded ? '2000px' : '0px' }}
           >
             {description.map((line, index) => (
@@ -49,7 +49,7 @@ const Place: React.FC<PlaceProps> = ({ image, name, t, shortDescription, descrip
             ))}
           </div>
           <div
-            className={`transition-opacity duration-500 ease-in-out overflow-hidden ${!isExpanded ? 'opacity-100' : 'opacity-0'} my-4`}
+            className={`transition-opacity duration-500 ease-in-out overflow-hidden ${!isExpanded ? 'opacity-100' : 'opacity-0'}`}
             style={{ maxHeight: !isExpanded ? '500px' : '0px' }}
           >
             {shortDescription.map((line, index) => (

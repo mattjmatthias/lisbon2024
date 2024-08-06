@@ -12,7 +12,7 @@ type HeaderProps = {
 const Header: React.FC<HeaderProps> = ({ image, name, t, tag }) => {
   return (      
     <>
-      <div id={tag} className="relative overflow-hidden flex justify-between items-center py-8">
+      <div id={tag} className="relative overflow-hidden flex justify-between items-center py-4">
         <div className="absolute inset-0 w-full h-[200px] max-h-[200px]">
             <Image src={image} alt="Header image" fill={true} className="object-cover object-middle"/>
         </div>

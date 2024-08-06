@@ -1,15 +1,16 @@
 import Image from "next/image";
-import Place from "./components/place";
 import header from "../public/header-dark.jpeg";
 import ButtonGrid from "./components/button-grid";
-import Day1 from "./components/day1";
 import TravelThere from "./components/travel-there";
+import Day1 from "./components/day1";
 import Day2 from "./components/day2";
 import Day3 from "./components/day3";
 import Day4 from "./components/day4";
-import TravelBack from "./components/travel-back";
 import Day5 from "./components/day5";
+import TravelBack from "./components/travel-back";
 import Notes from "./components/notes";
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
   const buttons = [
@@ -36,6 +37,9 @@ export default function Home() {
           </h1>
         </div>
       </div>
+
+      <Analytics/>
+      <SpeedInsights/>
 
       <ButtonGrid buttons={buttons} />      
       <TravelThere/>

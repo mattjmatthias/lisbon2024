@@ -90,7 +90,7 @@ export default function TravelThere() {
                     className="rounded-md md:max-w-[300px] mb-4 p-4 flex-1 flex items-center justify-center bg-pink-600 font-medium text-white"
                     href="https://www.airbnb.co.uk/rooms/45746815"
                     >
-                    View AirBnb 
+                    View Airbnb
                     </a>
 
                     <a

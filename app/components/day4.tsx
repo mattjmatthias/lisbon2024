@@ -1,31 +1,12 @@
-import Image from "next/image";
-import torreHeader from "../../public/torre-header.jpg";
 import Place from "./place";
 import Restaurant from "./restaurant";
+import Header from "./header";
 
 export default function Day4() {
   return (
     <>
-      <div id="thursday" className="relative overflow-hidden">
-        <div className="absolute inset-0 w-full h-[200px] max-h-[200px]">
-          <Image
-            src={torreHeader}
-            alt="Header image"
-            fill={true}
-            className="object-cover object-bottom"
-          />
-        </div>
-        <div className="relative flex items-center justify-center text-center py-4 pl-1.5 md:p-8">
-          <h1 className="m-0 w-full text-[40px] md:text-[70px] relative text-left tracking-[-4px] font-bold font-inherit whitespace-pre-wrap inline-block max-w-full z-[3] md:leading-[60px] leading-[38px] mix-blend-screen">
-            <p>
-              THURSDAY
-              <span className="ml-2 text-xs font-normal tracking-[0px]">
-                QUINTO-FEIRA
-              </span>
-            </p>
-          </h1>
-        </div>
-      </div>
+      <Header name="THURSDAY" t="QUINTO-FEIRA" tag="thursday" image="/torre-header.jpg"/>
+
       <div className="flex flex-col p-8">
         <div>
           <p>Day 4 we start off early to get to Belem before the crowds and queues at the Belem Pasteis shop. For lunch we go to the Timeout Food Hall, and spend the afternoon around the Alfama and its views.</p>

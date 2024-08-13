@@ -95,7 +95,7 @@ export default function TravelThere() {
 
                     <a
                     className="rounded-md md:max-w-[300px] mb-4 p-4 flex-1 flex items-center justify-center bg-pink-600 font-medium text-white"
-                    href="https://www.google.com/maps/place/Pra%C3%A7a+da+Figueira+9,+1100-555+Lisboa,+Portugal/@38.714169,-9.1421115,892m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd1933879d4b434d:0xaa469e8052fff844!8m2!3d38.7141691!4d-9.137246!16s%2Fg%2F11c5chw05r?entry=ttu"
+                    href="https://maps.app.goo.gl/mortY2MhMMqEvizv8?g_st=com.google.maps.preview.copy"
                     >
                     Show on map
                     </a>

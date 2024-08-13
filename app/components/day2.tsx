@@ -21,7 +21,7 @@ export default function Day2() {
                 "We'll meet the tour guide at 11:00am at Praça dos Restauradores, which is 6 mins on foot from where we're staying."
             ]}
             restaurantUrl="https://www.tripadvisor.co.uk/AttractionProductReview-g189158-d17533881-Undiscovered_Lisbon_Food_Wine_Tour_with_Eating_Europe-Lisbon_Lisbon_District_Centr.html"
-            url="https://www.google.com/maps/place/Pra%C3%A7a+dos+Restauradores,+1250-001+Lisboa,+Portugal/@38.7158437,-9.1439069,17z/data=!4m10!1m2!2m1!1sRestauradores+Square,+Pra%C3%A7a+dos+Restauradores,+1250-001+Lisboa,+Portugal!3m6!1s0xd193380df7aca9f:0x213be273dddd64f!8m2!3d38.7157819!4d-9.1412387!15sCklSZXN0YXVyYWRvcmVzIFNxdWFyZSwgUHJhw6dhIGRvcyBSZXN0YXVyYWRvcmVzLCAxMjUwLTAwMSBMaXNib2EsIFBvcnR1Z2FskgEObm90YWJsZV9zdHJlZXTgAQA!16s%2Fm%2F02w3jhp?entry=ttu"
+            url="https://maps.app.goo.gl/Qp3RWYD43qbHv2hK8?g_st=com.google.maps.preview.copy"
             />
         
         <Restaurant
@@ -33,7 +33,7 @@ export default function Day2() {
                 "Tripadvisor says to find the boat station 'Sul e Sueste' next to Commerce Square. The meeting point is inside the boat station, in front of ticket office #8."
             ]}
             restaurantUrl="https://www.tripadvisor.co.uk/AttractionProductReview-g189158-d12639157-2_Hour_Lisbon_Traditional_Boats_Sunset_Cruise_with_White_Wine-Lisbon_Lisbon_Distri.html"
-            url="https://www.google.com/maps/dir/38.7141718,-9.1373014/Esta%C3%A7%C3%A3o+Ferrovi%C3%A1ria+do+Sul+e+Sueste,+Avenida+Infante+Dom+Henrique,+Lisbon,+Portugal/@38.710442,-9.1411175,1784m/data=!3m3!1e3!4b1!5s0xd193380d98d2a1b:0x152b93b32556972b!4m9!4m8!1m0!1m5!1m1!1s0xd1934709adb3915:0x60191b5e8456c1b0!2m2!1d-9.1339882!2d38.7066826!3e2?entry=ttu"
+            url="https://maps.app.goo.gl/dB4nuU7cgqpQXMVS8?g_st=com.google.maps.preview.copy"
             />
         
         <h1 className="text-3xl font-bold">Restaurant</h1>

@@ -24,7 +24,7 @@ export default function Day3() {
             "The surrounding parkland is a botanical haven, designed with romantic pathways, hidden grottos, and exotic plant species. Visitors can wander through the vast gardens, explore the nearby Moorish Castle, or take in panoramic views from the palace's terraces. The blend of architectural styles and the stunning natural setting make Pena Palace a must-see destination in Portugal, offering a glimpse into the opulence and imagination of 19th-century royalty.",
             "Whether you're interested in history, architecture, or simply want to enjoy breathtaking scenery, Pena Palace provides a memorable experience that captures the enchanting essence of Sintra.",
           ]}
-          url="https://www.google.com/maps/place/Pala%C3%ADcio+da+Pena/@38.7870298,-9.3902822,17z/data=!3m1!4b1!4m6!3m5!1s0xd1933878b8d1db:0x5f90e5505f76a12f!8m2!3d38.7870298!4d-9.3880935!16zL20vMDJ4dTc?entry=ttu"
+          url="https://maps.app.goo.gl/7U8zX8QL7v5ULnzs8?g_st=com.google.maps.preview.copy"
         />
 
         <Place
@@ -40,7 +40,7 @@ export default function Day3() {
             "The main mansion, with its intricate carvings and eclectic design, complements the magical quality of the gardens. The interior of the mansion is equally impressive, featuring grand halls, ornate ceilings, and period furnishings that reflect the opulence of the era.",
             "Quinta da Regaleira is not just a visual feast but also a place steeped in symbolism and history, with connections to the esoteric traditions and secret societies of the time. A visit to this estate provides a unique blend of architectural beauty, historical intrigue, and natural splendor, making it a standout attraction in Sintra.",
           ]}
-          url="https://www.google.com/maps/place/Quinta+da+Regaleira/@38.797594,-9.388538,17z/data=!3m1!4b1!4m6!3m5!1s0xd1933878e638c65:0x2898e72d2b1c574!8m2!3d38.797594!4d-9.3863493!16zL20vMDIydGQ?entry=ttu"
+          url="https://maps.app.goo.gl/LWhXvyPWCynfGhzn6?g_st=com.google.maps.preview.copy"
         />
 
         <Place
@@ -56,7 +56,7 @@ export default function Day3() {
             "Although largely in ruins, the castle’s imposing structure and historical significance make it a fascinating site to explore. The atmospheric setting is enhanced by the castle's rugged terrain and its dramatic location atop a forested hill.",
             "Visiting the Moorish Castle offers not only a sense of historical grandeur but also an opportunity to immerse yourself in the natural beauty of Sintra. The combination of ancient ruins and spectacular views makes the castle a must-visit destination for history enthusiasts and nature lovers alike.",
           ]}
-          url="https://www.google.com/maps/place/Castelo+dos+Mouros/@38.792215,-9.388852,17z/data=!3m1!4b1!4m6!3m5!1s0xd1933878e1f64eb:0x23614b0f18a2e4a!8m2!3d38.792215!4d-9.3866633!16zL20vMDI0NmM?entry=ttu"
+          url="https://maps.app.goo.gl/fP326BQhVYLwBzHm8?g_st=com.google.maps.preview.copy"
         />
 
         <Place
@@ -72,7 +72,7 @@ export default function Day3() {
             "Sintra’s unique blend of architectural styles, from Moorish to Gothic, is showcased in its many landmarks, including the extravagant Pena Palace and the enigmatic Quinta da Regaleira. Beyond these famous sites, the town itself is a treasure trove of charming squares, historic buildings, and serene parks.",
             "Exploring Sintra provides a sense of stepping back in time, with its rich cultural heritage and stunning surroundings offering an unforgettable experience. Whether you're wandering through the local markets, relaxing in a cozy cafe, or admiring the town's beautiful architecture, Sintra's enchanting atmosphere makes it a destination not to be missed.",
           ]}
-          url="https://www.google.com/maps/place/Sintra,+Portugal/@38.798387,-9.388177,13z/data=!3m1!4b1!4m6!3m5!1s0xd193387d8129d89:0x700f01302d600b8!8m2!3d38.798387!4d-9.386281!16zL20vMGd0MXB?entry=ttu"
+          url="https://maps.app.goo.gl/i8XvJ2ZexeYySix58?g_st=com.google.maps.preview.copy"
         />
 
         <h1 className="text-3xl font-bold">Restaurant</h1>
@@ -85,7 +85,7 @@ export default function Day3() {
              "We have a table booked for 7:30pm at 2Monkeys, a Michelin-starred gem located in the historic Torel Palace in Lisbon. This restaurant offers contemporary Portuguese cuisine with a creative twist, set in a sophisticated and elegant atmosphere."
           ]}
           restaurantUrl="https://2monkeys.com.pt/"
-          url="https://www.google.com/maps/place/2Monkeys+Restaurant/@38.7184707,-9.1427093,892m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd19334f9246e1b1:0x9d284e2b28091778!8m2!3d38.7184707!4d-9.140129!16s%2Fg%2F11jywz9857?entry=ttu"
+          url="https://maps.app.goo.gl/pcVgrFU6csLvUpRk9?g_st=com.google.maps.preview.copy"
         />
       </div>
     </>
